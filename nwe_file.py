@@ -2,6 +2,8 @@ import urllib.request
 import os
 import requests
 base_url='https://www.mybidfood.com.au/api/s_v1/Image/GetImage/'
+print(base_url)
+print('all done')
 for i in range(1,100):
     image_id=str(62167)+ str(i)
     print(image_id)
