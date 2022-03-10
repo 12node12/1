@@ -9,6 +9,9 @@ for i in range(1,100):
     print(image_id)
 
     full_url='https://www.mybidfood.com.au/api/s_v1/Image/GetImage/'+image_id
+    
+    if not os.path.exists('fulldata'):
+        os.makedirs('fulldata')
 
     print(full_url)
     image_name='fulldata/'+image_id+'.jpg'
